@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+#bodySignUp{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0A4112;
+    height: 100vh;
+    width: 100vw;
+
+    overflow-y: hidden;
+}
+
+#formSignUp {
+    background-color: white;
+    border-radius: 20px;
+
+    width: 30rem;
+    height: 75vh;
+
+    padding: 1rem;
+    margin: 5rem auto;
+}
+
+#formSignUp a {
+    color: #0A4112;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    float: right;
+    transition: all .5ms;
+}
+
+#formSignUp a:hover{
+    transform: scale(1.1);
+}
+
+#formSignUp header {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+#formSignUp header h1{
+    color: #437149;
+    font-size: 2.5rem;
+}
+
+#formSignUp header p {
+    color: rgb(49, 49, 49);
+    font-size: 0.8rem;
+}
+
+#formSignUp section #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+#formSignUp section div label{
+    color: #5FB075;
+    font-size: 0.9rem;
+}
+
+#formSignUp section div input{
+    border: none;
+    border: 1px solid #5FB075;
+    border-radius: 10px;
+
+    width: 100%;
+    height: 40px;
+
+    margin-top: 0.3rem;
+    padding: 1rem;
+}
+
+#formSignUp section .typeUser{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#formSignUp section .typeUser select{
+    color: rgb(112, 112, 112);
+    border: 1px solid #5FB075;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+#formSignUp section .typeUser select option{
+    color: #5FB075;
+}
+
+#formSignUp section div .choosePhoto{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+#formSignUp section .btnSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #437149;
+    border: none;
+    border-radius: 40px;
+
+    width: 50%;
+    height: 40px;
+
+    margin-inline: auto;
+    margin-top: 2rem;
+   
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#formSignUp section .btnSubmit:hover{
+    filter: brightness(1.1);
+}
+
+.alert{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 100vw;
+
+    color: white;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0;
+
+}
+
+@media (max-width: 600px){
+    #formSignUp{
+        width: 25rem;
+    }
+
+    #formSignUp header h1{
+        font-size: 2rem;
+    }
+
+    #formSignUp section{
+        padding: 1rem;
+    }
+
+    #formSignUp section a{
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 0.7rem;
+    }
+}

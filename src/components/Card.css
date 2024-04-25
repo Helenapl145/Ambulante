@@ -1,0 +1,92 @@
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    padding-bottom: 3rem;
+    width: 50%;
+}
+
+#card div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #BDF6C4;
+    height: 10rem;
+    width: 100%;
+
+    border-radius: 20px;
+    padding-inline: 2rem;
+}
+
+#card div img{
+    border-radius: 50%;
+    height: 5rem;
+}
+
+#card .infoUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+
+    width: 100%;
+}
+
+#card .infoUser span{
+    color: #20bb2f;
+    font-size: 0.8rem;
+}
+
+#card .infoUser h1{
+    background-color: #d9d9d946;
+    width: 90%;
+
+    border-radius: 10px;
+    padding: 0.5rem;
+    
+    color: #117420;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;  
+}
+
+#card .infoUser a{
+    color: hsl(129, 74%, 26%);
+    text-decoration: underline;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#card div a img {
+    height: 3rem;
+}
+
+@media (max-width:1300px){
+    #card {
+        width: 90%;
+    }
+
+    #card div{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    #card .infoUser{
+        gap: 0.5rem;
+    }
+
+    #card .infoUser h4,
+    #card .infoUser a{
+        font-size: 0.7rem;
+    }
+
+    #card .infoUser h1{
+        font-size: 1rem;
+    }
+    
+    
+}
